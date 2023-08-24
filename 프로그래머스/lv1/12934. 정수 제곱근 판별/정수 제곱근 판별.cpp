@@ -1,6 +1,7 @@
 #include <string>
 #include <vector>
 #include <cmath>
+#include <math.h>
 using namespace std;
 
 long long solution(long long n) {
@@ -12,8 +13,7 @@ long long solution(long long n) {
     }
     else
     {
-        ++a;
-        answer = a * a;
+        answer = powl(a + 1 , 2);
     }
     
     
