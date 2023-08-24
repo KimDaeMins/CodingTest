@@ -23,13 +23,8 @@ vector<int> solution(vector<int> arr) {
     }
     else
     {
-        for(int i = 0 ; i < arr.size(); ++i)
-    {
-        if(i != minIndex)
-        {
-            answer.push_back(arr[i]);
-        }
-    }
+        arr.erase(arr.begin() + minIndex);
+        answer = arr;
     }
     return answer;
 }
