@@ -20,19 +20,16 @@ vector<int> solution(vector<string> keymap, vector<string> targets) {
     }
     for (string a : targets)
     {
-        bool isNone = false;
         for (int i = 0; i < a.size(); ++i)
         {
             Input += arr[a[i] - 'A'];
             if (arr[a[i] - 'A'] == 9999)
             {
-                answer.push_back(-1);
-                isNone = true;
+                Input = -1;
                 break;
             }
         }
-        if (!isNone)
-            answer.push_back(Input);
+        answer.push_back(Input);
         Input = 0;
     }
     return answer;
