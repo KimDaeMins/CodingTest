@@ -13,7 +13,6 @@ int solution(vector<vector<string>> clothes) {
         Wears[VEC[1]] += 1;
     }
     int Kinds = Wears.size();
-    //이거는 트리구조를 이해해야 알수있는거임?
     int answer = 1;
     for(auto& Pair : Wears)
     {
