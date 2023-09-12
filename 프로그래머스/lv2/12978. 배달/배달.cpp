@@ -10,7 +10,7 @@ void DFS(int now, long nowDis)
 
     for (int i = 0; i < graph.size(); ++i)
     {
-        if (graph[now][i] != 0 && check[i] > nowDis + graph[now][i])
+        if (graph[now][i] != 10001 && check[i] > nowDis + graph[now][i])
         {
             DFS(i, nowDis + graph[now][i]);
         }
@@ -23,7 +23,7 @@ int solution(int N, vector<vector<int> > road, int K) {
     for (int i = 0; i < N; ++i)
     {
         vector<int> a;
-        a.resize(N, 500000);
+        a.resize(N, 10001);
         graph.push_back(a);
     }
     check.resize(N, K + 1);
