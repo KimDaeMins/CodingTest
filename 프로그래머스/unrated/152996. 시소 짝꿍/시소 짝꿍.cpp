@@ -4,6 +4,7 @@
 #include <unordered_map>
 using namespace std;
 
+//dp로 풀면 좀더 이쁘다 라는거
 unordered_map<int, int> map;
 vector<int> vec;
 long long Combi(vector<int> a, int start)
